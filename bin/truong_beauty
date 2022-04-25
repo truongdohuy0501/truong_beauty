@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "gf_beauty"
+require "truong_beauty"
 
-GfBeauty.process
+TruongBeauty.process
