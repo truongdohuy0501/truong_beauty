@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
-  s.files       = ["lib/truong_beauty.rb"]
+  s.file       = ["lib/truong_beauty.rb"]
   s.executables << "truong_beauty"
 
   spec.bindir = "exe"
