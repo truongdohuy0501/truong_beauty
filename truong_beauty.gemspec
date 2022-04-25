@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "lib/truong_beauty/version"
-
 Gem::Specification.new do |s|
   s.name        = "truong_beauty"
   s.version     = "0.1.2"

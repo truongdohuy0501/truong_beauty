@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "truong_beauty/version"
-
 module TruongBeauty
   class Error < StandardError; end
   def self.process
