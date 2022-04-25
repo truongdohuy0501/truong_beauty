@@ -2,15 +2,14 @@
 
 require_relative "truong_beauty/version"
 
-module TruongBeauty
-  class Error < StandardError; end
+class TruongBeauty
   def self.process
     current_project = `pwd`
     current_project = current_project.gsub(/\n/,"")
     content = File.read(current_project + "/Gemfile")
-    content = content.gsub(/\#\s.*\s*/,"") # Xóa các dòng comment
-    content = content.gsub(/'/, '"') # Thay thế dấu ' bằng "
-    content = content.gsub(/\s*^group/, "\n\ngroup") # Remove các dòng trống
+    content = content.gsub(/\#\s.*\s*/,"")
+    content = content.gsub(/'/, '"')
+    content = content.gsub(/\s*^group/, "\n\ngroup")
     content = content.gsub(/\s*^\s+^gem/, "\n\ngem")
     File.open(current_project + "/Gemfile", "w") do |file|
       file.puts content
