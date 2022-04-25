@@ -9,7 +9,5 @@ Gem::Specification.new do |s|
   s.email       = "truong.dohuy0501@gmail.com"
   s.files       = ["lib/truong_beauty.rb"]
   s.executables << "truong_beauty"
-
-  spec.bindir = "exe"
 end
 
